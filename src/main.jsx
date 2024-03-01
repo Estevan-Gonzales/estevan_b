@@ -5,8 +5,12 @@ import Root from "./routes/root";
 import './App.css'
 import ErrorPage from '../error-page';
 import Projects from './pages/Projects';
+import DataSets from './pages/DataSets';
+import Contact from './pages/Contact.jsx';
+import Elements from  './pages/Elements';
+import Canvas from './components/Canvas';
+import TypeHype from './pages/TypeHype';
 import Monopoly from './pages/Monopoly';
-
 
 const router = createBrowserRouter([
   {
@@ -17,6 +21,26 @@ const router = createBrowserRouter([
   {
     path: '/Projects',
     element: <Projects />,
+  },
+  {
+    path: '/DataSets',
+    element: <DataSets />
+  },
+  {
+    path: '/Contact',
+    element: <Contact />
+  },
+  {
+    path: '/Projects/elements',
+    element: <Elements />
+  },
+  {
+    path: '/Projects/halfs',
+    element: <Canvas />
+  },
+  {
+    path: '/Projects/typehype',
+    element: <TypeHype />
   },
   {
     path: 'Projects/monopoly',
