@@ -1,5 +1,4 @@
 import React from 'react';
-import '/Users/estevan/Desktop/estevan/src/assets/index.css'
 import { Link } from 'react-router-dom';
 
 function Project({ projects }) {
