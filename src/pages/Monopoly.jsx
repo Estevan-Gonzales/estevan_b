@@ -76,15 +76,15 @@ function Monopoly() {
     </div>
   </div>
   <div className="property-header property-orange"></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
   <div className="property-header property-green"></div>
   <div className="property-body">
     <div className="rotate-right">
@@ -101,15 +101,15 @@ function Monopoly() {
     </div>
   </div>
   <div className="property-header property-orange"></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
   <div className="property-header property-green"></div>
   <div className="property-body">
     <div className="rotate-right">
@@ -122,15 +122,15 @@ function Monopoly() {
         Community Chest
       </div>
   </div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
   <div className="property-cc-right">
     <div className="rotate-right-full">
       Community Chest
@@ -142,15 +142,15 @@ function Monopoly() {
     </div>
   </div>
   <div className="property-header property-orange"></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
   <div className="property-header property-green"></div>
   <div className="property-body">
     <div className="rotate-right">
@@ -163,15 +163,15 @@ function Monopoly() {
     Pennsyl. Railroad
     </div>
   </div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
   <div className="property-short-line">
     <div className="rotate-right-full">
       Short Line
@@ -184,15 +184,15 @@ function Monopoly() {
     </div>
   </div>
   <div className="property-header property-hotpink"></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
   <div className="property-chance-right">
   <div className="rotate-right-full">
       Chance
@@ -205,15 +205,15 @@ function Monopoly() {
     </div>
   </div>
   <div className="property-header property-hotpink"></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
   <div className="property-header property-blue"></div>
   <div className="property-body">
     <div className="rotate-right">
@@ -226,15 +226,15 @@ function Monopoly() {
       Electric Company
     </div>
   </div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
   <div className="property-luxury-tax">
   <div className="rotate-right-full">
       Luxury Tax
@@ -247,15 +247,15 @@ function Monopoly() {
     </div>
   </div>
   <div className="property-header property-hotpink"></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
+  <div className="board-center"></div>
   <div className="property-header property-blue"></div>
   <div className="property-body">
     <div className="rotate-right">
