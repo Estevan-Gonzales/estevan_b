@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 
-import '/Users/estevan/Desktop/estevan/src/assets/index.css'
 
 export default function Root() {
   return (
