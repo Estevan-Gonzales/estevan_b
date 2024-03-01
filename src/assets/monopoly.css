@@ -1,0 +1,382 @@
+
+.outer-monopoly {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  color: black;
+  text-wrap: wrap;
+  font-size: 10px;
+  font-weight: bold;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.grid-monopoly {
+    display: grid;
+    height: 1000px;
+    width: 1000px;
+    grid-template: 2fr 1fr repeat(9, 2fr) 1fr 2fr / 2fr 1fr repeat(9, 2fr) 1fr 2fr;
+    border: solid royalblue 10px;
+    text-transform: uppercase;
+  }
+  
+  .property-text-top {
+    rotate: 180deg;
+    margin-top: 45px;
+  }
+  
+  .property-text-left {
+    transform: rotate(90deg);
+  }
+  
+  .property-text-left {
+    transform: rotate(270deg);
+    transform: translate(200px, 50px);
+  }
+  
+  .rotate-left {
+    rotate: 90deg;
+    max-width: 90px;
+    transform: translate(27px, -20px);
+  }
+
+  .rotate-left-full {
+    rotate: 90deg;
+    max-width: 90px;
+  }
+
+  .rotate-right {
+    rotate: -90deg;
+    max-width: 90px;
+    transform: translate(-27px, -20px);
+    align-self: center;
+
+  }
+
+  .rotate-right-full {
+    rotate: -90deg;
+    max-width: 90px;
+  }
+  
+  
+  .rotate-top {
+    rotate: 180deg;
+    margin-bottom: 10px;
+  }
+  
+  .rotate-bottom {
+    margin-top: 10px;
+  }
+  
+  .rotate-top-left {
+    rotate: 135deg;
+  }
+  
+  .rotate-top-right {
+    rotate: 225deg;
+  }
+  
+  .rotate-bottom-left {
+    rotate: 45deg;
+  }
+  
+  .rotate-bottom-right {
+    rotate: 315deg;
+  }
+  
+  .property-free-parking {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .property-chance-top {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    background-color: skyblue;
+    border: solid black 2px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .property-bo-railroad {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 7;
+    grid-column-end: 8;
+    background-color: grey;
+    border: solid black 2px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .property-water-works {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 10;
+    grid-column-end: 11;
+    background-color: white;
+    border: solid black 2px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .property-cc-left {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: skyblue;
+    border: solid black 2px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .property-cc-right {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 12;
+    grid-column-end: 14;
+    background-color: skyblue;
+    border: solid black 2px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .property-pennsylvania-railroad {
+    grid-row-start: 7;
+    grid-row-end: 8;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: grey;
+    border: solid black 2px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .property-short-line {
+    grid-row-start: 7;
+    grid-row-end: 8;
+    grid-column-start: 12;
+    grid-column-end: 14;
+    background-color: grey;
+    border: solid black 2px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .property-chance-right {
+    grid-row-start: 8;
+    grid-row-end: 9;
+    grid-column-start: 12;
+    grid-column-end: 14;
+    background-color: red;
+    border: solid black 2px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .property-electric-company {
+    grid-row-start: 10;
+    grid-row-end: 11;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: yellow;
+    border: solid black 2px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .property-luxury-tax {
+    grid-row-start: 10;
+    grid-row-end: 11;
+    grid-column-start: 12;
+    grid-column-end: 14;
+    background-color: yellow;
+    border: solid black 2px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .property-chance-bottom {
+    grid-row-start: 12;
+    grid-row-end: 14;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    background-color: hotpink;
+    border: solid black 2px;
+  }
+  
+  .property-reading-railroad {
+    grid-row-start: 12;
+    grid-row-end: 14;
+    grid-column-start: 7;
+    grid-column-end: 8;
+    background-color: grey;
+    border: solid black 2px;
+  }
+  
+  .property-income-tax {
+    grid-row-start: 12;
+    grid-row-end: 14;
+    grid-column-start: 8;
+    grid-column-end: 9;
+    background-color: white;
+    border: solid black 2px;
+  }
+  
+  .property-cc-bottom {
+    grid-row-start: 12;
+    grid-row-end: 14;
+    grid-column-start: 10;
+    grid-column-end: 11;
+    background-color: skyblue;
+    border: solid black 2px;
+  }
+  
+  
+  
+  .property-header {
+    background-color: blue;
+    border: solid black 2px;
+  
+  }
+  
+  .property-body {
+    background-color: beige;
+    border: solid black 2px;
+  }
+  
+  
+  
+  .property-go-to-jail {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 12;
+    grid-column-end: 14;
+    background-color: skyblue;
+    border: solid black 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .property-just-visiting {
+    grid-row-start: 12;
+    grid-row-end: 14;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: orange;
+    border: solid black 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .property-go {
+    grid-row-start: 12;
+    grid-row-end: 14;
+    grid-column-start: 12;
+    grid-column-end: 14;
+    background-color: red;
+    border: solid black 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+  }
+  
+  
+  
+  .property-chance-hotpink {
+    background-color: hotpink;
+  }
+  
+  .property-chance-skyblue {
+    background-color: skyblue;
+  }
+  
+  .property-chance-pink {
+    background-color: pink;
+  }
+  
+  .property-red {
+    background-color: red;
+  }
+  
+  .property-yellow {
+    background-color: yellow;
+  }
+  
+  .property-green {
+    background-color: green;
+  }
+  
+  .property-blue {
+    background-color: blue;
+  }
+  
+  .property-purple {
+    background-color: purple;
+  }
+  
+  .property-lightblue {
+    background-color: lightblue;
+  }
+  
+  .property-hotpink {
+    background-color: hotpink;
+  }
+  
+  .property-orange {
+    background-color: orange;
+  }
+  
+  .logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+  
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
+  
+  
+  .card {
+    padding: 2em;
+  }
+  
+  .read-the-docs {
+    color: #888;
+  }
+  
