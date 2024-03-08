@@ -6,7 +6,6 @@
   min-width: 320px;
   min-height: 100vh;
   color: black;
-  text-wrap: wrap;
   font-size: 10px;
   font-weight: bold;
   max-width: 1280px;
@@ -22,6 +21,10 @@
     grid-template: 2fr 1fr repeat(9, 2fr) 1fr 2fr / 2fr 1fr repeat(9, 2fr) 1fr 2fr;
     border: solid royalblue 10px;
     text-transform: uppercase;
+  }
+
+  .board-center {
+    background-color: beige;
   }
   
   .property-text-top {
