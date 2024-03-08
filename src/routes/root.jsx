@@ -19,6 +19,9 @@ export default function Root() {
             <Link to="/Projects">Projects</Link>
           </div>
           <div className="homepage-link">
+            <Link to="/Visualizations">Visualizations</Link>
+          </div>
+          <div className="homepage-link">
             <Link to="/DataSets">Data Sets</Link>
           </div>
           <div className="homepage-link">

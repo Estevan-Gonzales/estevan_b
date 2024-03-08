@@ -5,6 +5,7 @@ import Root from "./routes/root";
 import './App.css'
 import ErrorPage from '../error-page';
 import Projects from './pages/Projects';
+import Visualizations from './pages/Visualizations.jsx'
 import DataSets from './pages/DataSets';
 import Contact from './pages/Contact.jsx';
 import Elements from  './pages/Elements';
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: '/Projects',
     element: <Projects />,
+  },
+  {
+    path: '/Visualizations',
+    element: <Visualizations />,
   },
   {
     path: '/DataSets',
