@@ -30,10 +30,7 @@ export default function Projects() {
 
             <div className="outside-projects">
                 <div className="projects-header">Projects</div>
-                <div className="grid-projects">
                     <Project projects={projects}/>
-
-                </div>
             </div>
 
     );

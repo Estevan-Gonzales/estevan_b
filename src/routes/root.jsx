@@ -5,8 +5,12 @@ export default function Root() {
   return (
     <div className="outside-main">
         <div className="container">
-          <div className="row homepage-header">Estevan Gonzales</div>
-          <div className="row homepage-subline">Data Analyst & Software Developer</div>
+          <div className="row">
+            <div className="col homepage-header">Estevan Gonzales</div>
+          </div>
+          <div className="row">
+            <div className="col homepage-subline">Data Analyst & Software Developer</div>
+          </div>
         </div>
 
 

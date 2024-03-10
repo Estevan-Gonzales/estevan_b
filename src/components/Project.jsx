@@ -7,17 +7,21 @@ function Project({ projects }) {
 
     console.log(dataToPass);
     return (
-        <div>
-            {projects.map((project) => (
+        <div className="container projects-grid">
+            <div className="row">
 
-            <div className="project" key={project.id}>
-                <Link to={project.id}>
-                    <img className="darken" src={project.image_url}></img>
-                    <div className="project-caption">{project.name}</div>
-                </Link>
-            </div>
+            {projects.map((project) => (
+                <div className="project col-12 col-md-6 mt-4" key={project.id}>
+                    <Link to={project.id}>
+                        <img className="darken" src={project.image_url}></img>
+                        <div className="project-caption">{project.name}</div>
+                    </Link>
+                </div>
 
         ))};
+
+            </div>
+
         </div>
     )
 }

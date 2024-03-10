@@ -21,8 +21,8 @@ body {
     right: 0;
     overflow: auto;
     background-color: #2F7FB1;
-  
   }
+
 
   .full-width {
     width: 100%;
@@ -64,6 +64,10 @@ body {
   .homepage-image img {
     border-radius: 100%;
     max-width: 50%;
+  }
+
+  .projects-grid {
+    display: grid;
   }
   
   .outside-projects {
@@ -169,7 +173,6 @@ body {
   
   .project {
     position: relative;
-    margin-top: 100px;
     text-align: center;
   }
   
@@ -189,9 +192,11 @@ body {
   .darken {
     transition: all 250ms ease-in-out;
     filter: brightness(20%);
-    width: 60%;
+    width: 100%;
     border-radius: 30px;
     border: solid black 5px;
+    aspect-ratio: 11/6;
+    object-fit: cover;
   }
   
   .darken:hover {
