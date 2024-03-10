@@ -4,7 +4,7 @@ import '../assets/monopoly.css'
 function Monopoly() {
 
   return (
-    <div className="outer-monopoly">
+  <div className="outer-monopoly">
 
   <div className="grid-monopoly">
 
@@ -306,7 +306,6 @@ function Monopoly() {
 
   </div>
   </div>
-
   )
 }
 

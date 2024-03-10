@@ -27,12 +27,17 @@ export default function Projects() {
     ];
             
     return (
-
+        
             <div className="outside-projects">
-                <div className="projects-header">Projects</div>
+                <div className = "container">
+                    <div className="row">
+                        <div className="col pages-header">Projects</div>
+                    </div>
+                </div>
                     <Project projects={projects}/>
             </div>
 
     );
 
 };
+

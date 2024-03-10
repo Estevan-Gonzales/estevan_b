@@ -124,7 +124,6 @@ function TypeHype() {
 
   return (
     <div className="grid-typehype">
-      
       <div className="row-1">
         <div className="key-double" id="keyBacktick">`</div>
         <div className="key-double-alt" id="keyTilde" hidden={true}>~</div>
@@ -153,7 +152,6 @@ function TypeHype() {
         <div className="key-double" id="keyEqual">=</div>
         <div className="key-double-alt" id="keyPlus" hidden={true}>+</div>
         <div className="key-single" id="Backspace">DELETE</div>
-
       </div>
 
       <div className="row-2">
@@ -174,9 +172,7 @@ function TypeHype() {
         <div className="key-double-alt" id="keyCloseCurlyBrackets" hidden={true}></div>
         <div className="key-double" id="keyBackslash">\</div>
         <div className="key-double-alt" id="keyPipe" hidden={true}>|</div>
-
       </div>
-
       <div className="row-3">
         <div className="key-single" id="CapsLocks">CAPS</div>
         <div className="key-letter" id="a">A</div>
@@ -194,7 +190,6 @@ function TypeHype() {
         <div className="key-double-alt" id="keyDoubleParenthesis" hidden={true}>"</div>
         <div className="key-single" id="Enter">RETURN</div>
       </div>
-
       <div className="row-4">
         <div className="key-single" id="keyShiftLeft">SHIFT</div>
         <div className="key-letter" id="z">Z</div>
@@ -212,7 +207,6 @@ function TypeHype() {
         <div className="key-double-alt" id="keyLessThan" hidden={true}>?</div>
         <div className="key-single" id="keyShiftRight">SHIFT</div>
       </div>
-
       <div className="row-5">
         <div className="key-single" id="ControlLeft">CTRL</div>
         <div className="key-single" id="AltLeft">OPT</div>
@@ -220,10 +214,9 @@ function TypeHype() {
         <div className="key-single" id="Space">SPACE</div>
         <div className="key-single" id="MetaRight">CMD</div>
         <div className="key-single" id="AltRight">OPT</div>
-        <div></div>
-        <div></div>
+        <div className="filler"></div>
+        <div className="filler"></div>
       </div>
-
     </div>
   );
 }
