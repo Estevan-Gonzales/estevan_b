@@ -19,7 +19,7 @@ function Visualization({ vizs }) {
                     </Link>
                 </div>
 
-        ))};
+        ))}
             </div>
         </div>
     )

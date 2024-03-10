@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Root() {
   return (
-    <div className="outside-main">
+    <div>
         <div className="container">
           <div className="row">
             <div className="col homepage-header">Estevan Gonzales</div>

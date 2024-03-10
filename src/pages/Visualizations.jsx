@@ -18,8 +18,8 @@ export default function Visualizations() {
     ];
             
     return (
-            <div className="outside-vizs">
-                <div className="vizs-header">Visualizations</div>
+            <div>
+                <div className="pages-header">Visualizations</div>
                 <Visualization vizs={vizs}/>
             </div>
     );

@@ -6,30 +6,21 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: normal;
+    background-color: #2F7FB1
+
   }
-  
+
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
-  
-  .outside-main {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    overflow: auto;
-    background-color: #2F7FB1;
-  }
-
 
   .full-width {
     width: 100%;
   }
   
   .homepage-header {
-    font-size: calc(1.5em + 5vw);
+    font-size: calc(3em + 3vw);
     margin-top: 5%;
     text-wrap: nowrap;
     text-align: left;
@@ -55,7 +46,7 @@ body {
     grid-template-columns: 1fr 1fr;
   }
   .homepage-links {
-    font-size: calc(1.5em + 4vw);
+    font-size: calc(3em + 3vw);
     text-align: left;
     text-wrap: nowrap;
   }
@@ -79,15 +70,7 @@ body {
     display: grid;
   }
   
-  .outside-projects {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    overflow: auto;
-    background-color: #2F7FB1;
-  }
+
   
   .projects-header {
     font-size: 100px;
@@ -95,16 +78,6 @@ body {
     margin-left: 30px;
   }
 
-  .outside-vizs {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    overflow: auto;
-    background-color: #2F7FB1;
-  }
-  
   .vizs-header {
     font-size: 100px;
     margin-top: 20px;
@@ -165,10 +138,6 @@ body {
     min-width: 20%;
     max-width: 30%;
   }
-  
-  
-  
-  
   
   .projects {
     position: fixed;

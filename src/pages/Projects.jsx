@@ -28,7 +28,7 @@ export default function Projects() {
             
     return (
         
-            <div className="outside-projects">
+            <div>
                 <div className = "container">
                     <div className="row">
                         <div className="col pages-header">Projects</div>
