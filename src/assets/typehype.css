@@ -1,64 +1,67 @@
-
-.key-letter {
+.key {
+  border: solid black 4px;
   background-color: grey;
-  border: 1px solid black;
-  text-align: center;
-  padding-top: 30px;
-  font-size: xx-large;
-  border-radius: 10px;
-
 }
 
-.key-number {
-  background-color: red;
-  border: 1px solid black;
+.key-letter {
   text-align: center;
   padding-top: 30px;
   font-size: xx-large;
   border-radius: 10px;
+}
 
+.key-letter-alt {
+  text-align: center;
+  padding-top: 30px;
+  font-size: xx-large;
+  border-radius: 10px;
+  font-weight: bolder
 }
 
 .key-single {
-  background-color: blue;
-  border: 1px solid black;
   text-align: center;
   padding-top: 30px;
   font-size: xx-large;
   border-radius: 10px;
-
 }
 
 
 .key-double {
-  background-color: red;
-  border: 1px solid black;
   text-align: center;
   padding-top: 30px;
   font-size: xx-large;
   border-radius: 10px;
-
 }
+
+.key-double-alt {
+  text-align: center;
+  padding-top: 30px;
+  font-size: xx-large;
+  border-radius: 10px;
+  background-color: lightyellow;
+  }
 
 
 .key-pressed {
   background-color: yellow;
-  border: 1px solid black;
+  border: solid black 4px;
   text-align: center;
   padding-top: 30px;
   font-size: xx-large;
+  border-radius: 10px;
 }
 
-
-
-
-.key-double-alt {
-  background-color: red;
-  border: 1px solid black;
+.key-pressed-cap {
+  background-color: yellow;
+  border: solid black 4px;
   text-align: center;
   padding-top: 30px;
   font-size: xx-large;
+  border-radius: 10px;
+  font-weight: bolder;
 }
+
+
 
 .grid-typehype {
   background-color: white;
@@ -73,7 +76,6 @@
 }
 .row-1 {
   display: grid;
-
   grid-template-columns: repeat(13, 2fr) 3fr;
 }
 
@@ -100,5 +102,5 @@
 
 .filler {
   background-color: white;
-  border-radius: 10px;
+  border: 2px solid black;
 }
