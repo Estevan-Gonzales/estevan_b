@@ -4,6 +4,11 @@ export default function Projects() {
 
     let projects = [
         {
+            name: "Cube",
+            id: "cube",
+            image_url: "/images/monopoly.png" //Avacado
+        },
+        {
             name: "Monopoly",
             id: "monopoly",
             image_url: "/images/monopoly.png"
