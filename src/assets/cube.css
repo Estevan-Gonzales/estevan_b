@@ -12,6 +12,7 @@
   margin: 50px;
 }
 
+
 .cube-face {
   display: grid;
   border-radius: 5px;
@@ -54,85 +55,3 @@
 .square-color-yellow {
   background-color: yellow;
 }
-
-
-  
-  .block {
-    display: grid;
-    border-radius: 5px;
-  }
-  
-  .element-name {
-    display: none;
-    font-size: small;
-    text-align: center;
-  }
-  
-  .element-number {
-    justify-content: left;
-    font-size: large;
-    margin-left: 2px;
-  }
-  
-  .element-symbol {
-    font-size: xxx-large; 
-    text-align: center;
-    margin-top: -20px;
-  
-  }
-  
-  .block:hover{
-    transform: scale(2);
-    transition-duration: 300ms;
-  }
-  
-  .block:hover .element-name {
-    display: block;
-  }
-  
-  .block-empty {
-    height: 80px;
-    width: 80px;
-    background-color: white;
-  }
-  
-  .reactive-nonmetals {
-    background-color: lightblue;
-    border: 2px solid blue;
-  }
-  .noble-gases {
-    background-color: lightcoral;
-    border: 2px solid red
-  }
-  .alkali-metals {
-    background-color:  lightgreen;
-    border: 2px solid green;
-  }
-  .alkaline-earth-metals {
-    background-color: pink;
-    border: 2px solid hotpink;
-  }
-  .metalloids {
-    background-color: lightgoldenrodyellow;
-    border: 2px solid gold
-  }
-  .post-transition-metals {
-    background-color: burlywood;
-    border: 2px solid sienna
-  }
-  .transition-metals {
-    background-color: plum;
-    border: 2px solid purple
-  }
-  .unknown-properties {
-    background-color: lightgrey;
-    border: 2px solid grey;
-  }
-  .lanthanides {
-    background-color: lightcyan;
-    border: 2px solid teal
-  }
-  .actinides {
-    background-color: peachpuff;
-    border: 2px solid orange
-  }

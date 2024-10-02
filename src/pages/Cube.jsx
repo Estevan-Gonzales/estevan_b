@@ -2,87 +2,30 @@ import '../assets/cube.css'
 
 function Cube() {
 
-    let colorDict = {
-        "top": {
-            1: "blue",
-            2: "blue",
-            3: "blue",
-            4: "blue",
-            5: "blue",
-            6: "blue",
-            7: "blue",
-            8: "blue",
-            9: "blue",
-        },
-        "right": {
-            1: "red",
-            2: "red",
-            3: "red",
-            4: "red",
-            5: "red",
-            6: "red",
-            7: "red",
-            8: "red",
-            9: "red",
-        },
-        "bottom": {
-            1: "green",
-            2: "green",
-            3: "green",
-            4: "green",
-            5: "green",
-            6: "green",
-            7: "green",
-            8: "green",
-            9: "green",
-        },
-        "left": {
-            1: "orange",
-            2: "orange",
-            3: "orange",
-            4: "orange",
-            5: "orange",
-            6: "orange",
-            7: "orange",
-            8: "orange",
-            9: "orange",
-        },
-        "front": {
-            1: "white",
-            2: "white",
-            3: "white",
-            4: "white",
-            5: "white",
-            6: "white",
-            7: "white",
-            8: "white",
-            9: "white",
-        },
-        "back": {
-            1: "yellow",
-            2: "yellow",
-            3: "yellow",
-            4: "yellow",
-            5: "yellow",
-            6: "yellow",
-            7: "yellow",
-            8: "yellow",
-            9: "yellow",
+    let faces = ["front", "top", "right", "bottom", "left", "back"]
+    let faceColors = ["white", "blue", "red", "green", "orange", "yellow"]
+
+    let colorDict = {}
+
+    for (var i = 0; i < faces.length; i++) {
+        colorDict[faces[i]] = {}
+        for (var x = 1; x < 10; x++) {
+            colorDict[faces[i]][x] = faceColors[i]
         }
-    }
+    } 
+
 
     function setStartColors() {
         for(var face in colorDict) {
-            console.log(face)
             for (var position in colorDict[face]) {
-                console.log(position)
                 var square = document.getElementById('face-' + face + "-" + position)
                 square.style.backgroundColor = colorDict[face][position]
             }
         }
     }
 
-    function swapEdges(recieverPositions, targetColors) {
+
+    function shiftEdge(recieverPositions, targetColors) {
 
         var count = recieverPositions.length;
         for (var i=0; i<count; i++) {
@@ -106,21 +49,16 @@ function Cube() {
         for (var i = 0; i < recieverSequence.length; i++) {
             recieverPositions.push("face-" + face + "-" + recieverSequence[i]);
         }
-        console.log(recieverPositions)
         for (var i = 0; i < colorSequence.length; i++) {
             donorColors.push(document.getElementById("face-" + face + "-" + colorSequence[i]).style.backgroundColor)
         }
-        console.log(donorColors)
         for (var i = 0; i < recieverPositions.length; i++) {
-            console.log(document.getElementById(recieverPositions[i]).style.backgroundColor)
             document.getElementById(recieverPositions[i]).style.backgroundColor = donorColors[i]
-            console.log(document.getElementById(recieverPositions[i]).style.backgroundColor)
-            console.log("above")
+
 
             colorDict[face][recieverPositions[i]] = donorColors[i]
         }
-        console.log(recieverPositions)
-        console.log(donorColors)
+
 
 
     }
@@ -128,36 +66,18 @@ function Cube() {
     function shiftFront() {
 
         let targetColors = [
-            colorDict.top[7],
-            colorDict.top[8],
-            colorDict.top[9],
-            colorDict.right[1],
-            colorDict.right[4],
-            colorDict.right[7],
-            colorDict.bottom[3],
-            colorDict.bottom[2],
-            colorDict.bottom[1],
-            colorDict.left[9],
-            colorDict.left[6],
-            colorDict.left[3]
+            colorDict.top[7], colorDict.top[8], colorDict.top[9],
+            colorDict.right[1], colorDict.right[4], colorDict.right[7],
+            colorDict.bottom[3], colorDict.bottom[2], colorDict.bottom[1],
+            colorDict.left[9], colorDict.left[6], colorDict.left[3]
         ]
-
         let recieverPositions = [
-            "face-right-1",
-            "face-right-4",
-            "face-right-7",
-            "face-bottom-3",
-            "face-bottom-2",
-            "face-bottom-1",
-            "face-left-9",
-            "face-left-6",
-            "face-left-3",
-            "face-top-7",
-            "face-top-8",
-            "face-top-9"
+            "face-right-1","face-right-4", "face-right-7",
+            "face-bottom-3", "face-bottom-2", "face-bottom-1",
+            "face-left-9", "face-left-6", "face-left-3",
+            "face-top-7", "face-top-8", "face-top-9"
         ]
-
-        swapEdges(recieverPositions, targetColors)
+        shiftEdge(recieverPositions, targetColors)
         shiftFace("front")
     }
 
@@ -174,9 +94,8 @@ function Cube() {
             "face-bottom-9", "face-bottom-6", "face-bottom-3",
             "face-front-9", "face-front-6", "face-front-3",
         ]
-        swapEdges(recieverPositions, donorColors)
+        shiftEdge(recieverPositions, donorColors)
         shiftFace("right")
-
     }
 
     function shiftLeft() {
@@ -192,9 +111,8 @@ function Cube() {
             "face-top-1", "face-top-4", "face-top-7",
             "face-back-1", "face-back-4", "face-back-7",
         ]
-        swapEdges(recieverPositions, donorColors)
+        shiftEdge(recieverPositions, donorColors)
         shiftFace("left")
-
     }
 
     function shiftTop() {
@@ -203,7 +121,6 @@ function Cube() {
             colorDict.left[1], colorDict.left[2], colorDict.left[3],
             colorDict.back[1], colorDict.back[2], colorDict.back[3],
             colorDict.right[1], colorDict.right[2], colorDict.right[3],
-
         ]
         let recieverPositions = [
             "face-left-1", "face-left-2", "face-left-3",
@@ -211,7 +128,7 @@ function Cube() {
             "face-right-1", "face-right-2", "face-right-3",
             "face-front-1", "face-front-2", "face-front-3",
         ]
-        swapEdges(recieverPositions, donorColors)
+        shiftEdge(recieverPositions, donorColors)
         shiftFace("top")
     }
 
@@ -221,7 +138,6 @@ function Cube() {
             colorDict.right[7], colorDict.right[8], colorDict.right[9],
             colorDict.back[7], colorDict.back[8], colorDict.back[9],
             colorDict.left[7], colorDict.left[8], colorDict.left[9],
-
         ]
         let recieverPositions = [
             "face-right-7", "face-right-8", "face-right-9",
@@ -229,13 +145,11 @@ function Cube() {
             "face-left-7", "face-left-8", "face-left-9",
             "face-front-7", "face-front-8", "face-front-9",
         ]
-        swapEdges(recieverPositions, donorColors)
+        shiftEdge(recieverPositions, donorColors)
         shiftFace("bottom")
     }
 
-
     function shiftBack() {
-        console.log("here")
         let donorColors = [
             colorDict.top[1], colorDict.top[2], colorDict.top[3],
             colorDict.left[7], colorDict.left[4], colorDict.left[1],
@@ -248,40 +162,29 @@ function Cube() {
             "face-right-3", "face-right-6", "face-right-9",
             "face-top-1", "face-top-2", "face-top-3"
         ]
-        swapEdges(recieverPositions, donorColors)
+        shiftEdge(recieverPositions, donorColors)
         shiftFace("back")
     }
 
 
-
-
-
-
+    
 
     window.onload=function() {
 
-        setStartColors();
+        document.getElementById('btn-front-clock').addEventListener('click', shiftFront);
+        document.getElementById('btn-right-clock').addEventListener('click', shiftRight);
+        document.getElementById('btn-bottom-clock').addEventListener('click', shiftBottom);
+        document.getElementById('btn-left-clock').addEventListener('click', shiftLeft);
+        document.getElementById('btn-top-clock').addEventListener('click', shiftTop);
+        document.getElementById('btn-back-clock').addEventListener('click', shiftBack);
 
-        const btnFrontClock = document.getElementById('btn-front-clock')
-        btnFrontClock.addEventListener('click', shiftFront)
-
-        const btnRightClock = document.getElementById('btn-right-clock')
-        btnRightClock.addEventListener('click', shiftRight)
-
-        const btnBottomClock = document.getElementById('btn-bottom-clock')
-        btnBottomClock.addEventListener('click', shiftBottom)
-
-        const btnLeftClock = document.getElementById('btn-left-clock')
-        btnLeftClock.addEventListener('click', shiftLeft)
-
-        const btnTopClock = document.getElementById('btn-top-clock')
-        btnTopClock.addEventListener('click', shiftTop)
-
-        const btnBackClock = document.getElementById('btn-back-clock');
-        btnBackClock.addEventListener('click', shiftBack)
-
+        setStartColors()
 
     }
+
+
+
+
 
     return (
         <div className="master-container">
@@ -293,7 +196,7 @@ function Cube() {
             <button id="btn-back-clock" type="button" className="btn btn-primary">Shift Back</button>
 
 
-            <div className="grid">
+            <div className="grid cube">
                 <div className="cube-face"></div>
                 <div className="cube-face">
                     <div id="face-top-1" className="cube-square"></div>
