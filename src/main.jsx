@@ -19,7 +19,7 @@ import DataSets from './pages/DataSets';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '',
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
