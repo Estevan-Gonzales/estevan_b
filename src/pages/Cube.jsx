@@ -231,7 +231,25 @@ function Cube() {
         ]
         swapEdges(recieverPositions, donorColors)
         shiftFace("bottom")
+    }
 
+
+    function shiftBack() {
+        console.log("here")
+        let donorColors = [
+            colorDict.top[1], colorDict.top[2], colorDict.top[3],
+            colorDict.left[7], colorDict.left[4], colorDict.left[1],
+            colorDict.bottom[9], colorDict.bottom[8], colorDict.bottom[7],
+            colorDict.right[3], colorDict.right[6], colorDict.right[9]
+        ]
+        let recieverPositions = [
+            "face-left-7", "face-left-4", "face-left-1",
+            "face-bottom-9", "face-bottom-8", "face-bottom-7",
+            "face-right-3", "face-right-6", "face-right-9",
+            "face-top-1", "face-top-2", "face-top-3"
+        ]
+        swapEdges(recieverPositions, donorColors)
+        shiftFace("back")
     }
 
 
@@ -258,6 +276,9 @@ function Cube() {
 
         const btnTopClock = document.getElementById('btn-top-clock')
         btnTopClock.addEventListener('click', shiftTop)
+
+        const btnBackClock = document.getElementById('btn-back-clock');
+        btnBackClock.addEventListener('click', shiftBack)
 
 
     }
