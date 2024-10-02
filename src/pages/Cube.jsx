@@ -47,14 +47,14 @@ function Cube() {
             8: "orange",
             9: "orange",
         },
-        "center": {
-            1: "white",
+        "front": {
+            1: "pink",
             2: "white",
             3: "white",
             4: "white",
             5: "white",
             6: "white",
-            7: "white",
+            7: "purple",
             8: "white",
             9: "white",
         },
@@ -71,7 +71,7 @@ function Cube() {
         }
     }
 
-    function swapColors(toChange, targetColors, face) {
+    function swapEdges(toChange, targetColors) {
 
         var count = toChange.length;
         for (var i=0; i<count; i++) {
@@ -81,7 +81,30 @@ function Cube() {
             colorDict[face][position] = targetColors[i]
         }
 
-        document.getElementById("face-" + face + "-1").style.backgroundColor = colorDict.face[7]
+    }
+
+    function swapFace(face) {
+
+        var toChange = ['face-front-1', 'face-front-2', 'face-front-3', 'face-front-6','face-front-9', 'face-front-8', 'face-front-7', 'face-front-4']
+        var targetColors = [
+            colorDict.front[7],
+            colorDict.front[4],
+            colorDict.front[1],
+            colorDict.front[2],
+            colorDict.front[3],
+            colorDict.front[6],
+            colorDict.front[9],
+            colorDict.front[8]]
+
+        var count = toChange.length;
+        for (var i=0; i<count; i++) {
+            document.getElementById(toChange[i]).style.backgroundColor = targetColors[i]
+            let face = toChange[i].split("-")[1]
+            let position = toChange[i].split("-")[2]
+            colorDict[face][position] = targetColors[i]
+        }
+
+
     }
 
     function shiftCenter() {
@@ -116,57 +139,23 @@ function Cube() {
             "face-top-9"
         ]
 
-        swapColors(toChange, targetColors, "center")
-    }
-
-    function shiftTop() {
-
-        let targetColors = [
-            colorDict.top[7],
-            colorDict.top[8],
-            colorDict.top[9],
-            colorDict.right[1],
-            colorDict.right[4],
-            colorDict.right[7],
-            colorDict.bottom[1],
-            colorDict.bottom[2],
-            colorDict.bottom[3],
-            colorDict.left[9],
-            colorDict.left[6],
-            colorDict.left[3]
-        ]
-
-        let toChange = [
-            "face-right-1",
-            "face-right-4",
-            "face-right-7",
-            "face-bottom-3",
-            "face-bottom-2",
-            "face-bottom-1",
-            "face-left-9",
-            "face-left-6",
-            "face-left-3",
-            "face-top-7",
-            "face-top-8",
-            "face-top-9"
-        ]
-
-        swapColors(toChange, targetColors, "center")
+        swapEdges(toChange, targetColors, "front")
+        swapFace("front")
     }
 
     window.onload=function() {
 
         const btn = document.getElementById('test-button')
         btn.addEventListener('click', shiftCenter)
+
+        setStartColors()
     }
 
-    window.onload=function() {
-
-        const btn = document.getElementById('test-button')
-        btn.addEventListener('click', shiftCenter)
+    function setStartColors() {
+        for(var i = 1; i < 10; i++) {
+            document.getElementById('face-front-' + i).style.backgroundColor = colorDict["front"][i]
+        }
     }
-
-
 
 
     return (
@@ -200,15 +189,15 @@ function Cube() {
                 </div>
 
                 <div className="cube-face">
-                    <div id="face-center-1" className="cube-square square-color-yellow"></div>
-                    <div id="face-center-2" className="cube-square square-color-white"></div>
-                    <div id="face-center-3" className="cube-square square-color-white"></div>
-                    <div id="face-center-4" className="cube-square square-color-white"></div>
-                    <div id="face-center-5" className="face-center square-color-white"></div>
-                    <div id="face-center-6" className="cube-square square-color-white"></div>
-                    <div id="face-center-7" className="cube-square square-color-white"></div>
-                    <div id="face-center-8" className="cube-square square-color-white"></div>
-                    <div id="face-center-9" className="cube-square square-color-white"></div>
+                    <div id="face-front-1" className="cube-square "></div>
+                    <div id="face-front-2" className="cube-square "></div>
+                    <div id="face-front-3" className="cube-square "></div>
+                    <div id="face-front-4" className="cube-square "></div>
+                    <div id="face-front-5" className="face-center "></div>
+                    <div id="face-front-6" className="cube-square"></div>
+                    <div id="face-front-7" className="cube-square "></div>
+                    <div id="face-front-8" className="cube-square "></div>
+                    <div id="face-front-9" className="cube-square"></div>
                 </div>
 
                 <div className="cube-face">
