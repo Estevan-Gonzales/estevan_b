@@ -21,6 +21,14 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
+    routes: [
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
+    ]
+  },
+  {
     path: '/Projects',
     element: <Projects />,
   },
