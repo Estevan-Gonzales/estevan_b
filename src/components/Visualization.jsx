@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom';
 
 function Visualization({ vizs }) {
 
-    const dataToPass = { name: 'John Doe', age: 25 };
-
-    console.log(dataToPass);
     return (
         <div className="container projects-grid">
             <div className="row">

@@ -6,7 +6,7 @@ export default function Projects() {
         {
             name: "Cube",
             id: "cube",
-            image_url: "/images/monopoly.png" //Avacado
+            image_url: "/images/monopoly.png"
         },
         {
             name: "Monopoly",

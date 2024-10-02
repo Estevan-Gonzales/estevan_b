@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Root from "./routes/root";
 import './App.css'
 import ErrorPage from '../error-page';
 import Projects from './pages/Projects';
@@ -13,62 +12,59 @@ import Canvas from './components/Canvas';
 import TypeHype from './pages/TypeHype';
 import Monopoly from './pages/Monopoly';
 import Cube from './pages/Cube'
+import Home from './pages/Home'
+import App from './App'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Root />,
+    element: <App />,
     errorElement: <ErrorPage />,
-  },
-  {
-    routes: [
+    children: [
       {
-        "src": "/(.*)",
-        "dest": "/index.html"
+        index: true,
+        element: <Home />
+      },
+      {
+        path: '/Projects',
+        element: <Projects />,
+      },
+      {
+        path: '/Visualizations',
+        element: <Visualizations />,
+      },
+      {
+        path: '/DataSets',
+        element: <DataSets />
+      },
+      {
+        path: '/Contact',
+        element: <Contact />
+      },
+      {
+        path: '/Projects/elements',
+        element: <Elements />
+      },
+      {
+        path: '/Projects/halfs',
+        element: <Canvas />
+      },
+      {
+        path: '/Projects/typehype',
+        element: <TypeHype />
+      },
+      {
+        path: 'Projects/monopoly',
+        element: <Monopoly />
+      },
+      {
+        path: 'Projects/cube',
+        element: <Cube />
       }
     ]
-  },
-  {
-    path: '/Projects',
-    element: <Projects />,
-  },
-  {
-    path: '/Visualizations',
-    element: <Visualizations />,
-  },
-  {
-    path: '/DataSets',
-    element: <DataSets />
-  },
-  {
-    path: '/Contact',
-    element: <Contact />
-  },
-  {
-    path: '/Projects/elements',
-    element: <Elements />
-  },
-  {
-    path: '/Projects/halfs',
-    element: <Canvas />
-  },
-  {
-    path: '/Projects/typehype',
-    element: <TypeHype />
-  },
-  {
-    path: 'Projects/monopoly',
-    element: <Monopoly />
-  },
-  {
-    path: 'Projects/cube',
-    element: <Cube />
   }
-],
-);
+])
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
 );

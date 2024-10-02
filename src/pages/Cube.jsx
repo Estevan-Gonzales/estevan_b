@@ -167,9 +167,7 @@ function Cube() {
     }
 
 
-    
-
-    window.onload=function() {
+    window.addEventListener("load", function() {
 
         document.getElementById('btn-front-clock').addEventListener('click', shiftFront);
         document.getElementById('btn-right-clock').addEventListener('click', shiftRight);
@@ -179,10 +177,14 @@ function Cube() {
         document.getElementById('btn-back-clock').addEventListener('click', shiftBack);
 
         setStartColors()
+    })
 
-    }
 
 
+
+    
+
+ 
 
 
 
@@ -276,6 +278,7 @@ function Cube() {
 
             </div>
         </div>
+
     );
 }
 
