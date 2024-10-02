@@ -22,7 +22,6 @@
 
 .cube-square {
   display: grid;
-  background-color: purple;
   border: solid black;
   border-radius: 20px
 }

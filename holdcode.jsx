@@ -1,31 +1,20 @@
-document.getElementById("face-right-1").style.backgroundColor = colorDict.top[7]
-document.getElementById("face-right-4").style.backgroundColor = colorDict.top[8]
-document.getElementById("face-right-7").style.backgroundColor = colorDict.top[9]
+if (face == "top") {
+    var toChange = ['face-front-1', 'face-front-2', 'face-front-3', 'face-front-6','face-front-9', 'face-front-8', 'face-front-7', 'face-front-4']
+    var targetColors = [
+        colorDict.front[7],
+        colorDict.front[4],
+        colorDict.front[1],
+        colorDict.front[2],
+        colorDict.front[3],
+        colorDict.front[6],
+        colorDict.front[9],
+        colorDict.front[8]]
 
-document.getElementById("face-bottom-3").style.backgroundColor = colorDict.right[1]
-document.getElementById("face-bottom-2").style.backgroundColor = colorDict.right[4]
-document.getElementById("face-bottom-1").style.backgroundColor = colorDict.right[7]
-
-document.getElementById("face-left-9").style.backgroundColor = colorDict.bottom[1]
-document.getElementById("face-left-6").style.backgroundColor = colorDict.bottom[2]
-document.getElementById("face-left-3").style.backgroundColor = colorDict.bottom[3]
-
-document.getElementById("face-top-7").style.backgroundColor = colorDict.left[9]
-document.getElementById("face-top-8").style.backgroundColor = colorDict.left[6]
-document.getElementById("face-top-9").style.backgroundColor = colorDict.left[3]
-
-colorDict.right[1] = document.getElementById("face-right-1").style.backgroundColor
-colorDict.right[4] = document.getElementById("face-right-4").style.backgroundColor
-colorDict.right[7] = document.getElementById("face-right-7").style.backgroundColor
-
-colorDict.bottom[3] = document.getElementById("face-bottom-3").style.backgroundColor
-colorDict.bottom[2] = document.getElementById("face-bottom-2").style.backgroundColor
-colorDict.bottom[1] = document.getElementById("face-bottom-1").style.backgroundColor
-
-colorDict.left[9] = document.getElementById("face-left-9").style.backgroundColor
-colorDict.left[6] = document.getElementById("face-left-6").style.backgroundColor
-colorDict.left[3] = document.getElementById("face-left-3").style.backgroundColor
-
-colorDict.top[7] = document.getElementById("face-top-7").style.backgroundColor
-colorDict.top[8] = document.getElementById("face-top-8").style.backgroundColor
-colorDict.top[9] = document.getElementById("face-top-9").style.backgroundColor
+    var count = toChange.length;
+    for (var i=0; i<count; i++) {
+        document.getElementById(toChange[i]).style.backgroundColor = targetColors[i]
+        let face = toChange[i].split("-")[1]
+        let position = toChange[i].split("-")[2]
+        colorDict[face][position] = targetColors[i]
+    }
+}
