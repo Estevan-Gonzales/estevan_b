@@ -1,4 +1,4 @@
-import '../assets/typehype.css';
+import '../assets/css/typehype.css';
 
 function TypeHype() {
 
