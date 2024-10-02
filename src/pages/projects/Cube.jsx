@@ -1,4 +1,4 @@
-import '../assets/css/cube.css'
+import '../../assets/css/cube.css'
 
 function Cube() {
 

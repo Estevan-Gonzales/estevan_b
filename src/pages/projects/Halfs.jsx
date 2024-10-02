@@ -1,7 +1,6 @@
-import '../assets/css/halfs.css'
+import '../../assets/css/halfs.css'
 
-
-function Canvas() {
+function Halfs() {
 
     function returnRandomColor(existingColor) {
 
@@ -142,7 +141,5 @@ function Canvas() {
 
         </div>
     )
-
 }
-
-export default Canvas;
+export default Halfs;

@@ -1,4 +1,4 @@
-import '../assets/css/elements.css'
+import '../../assets/css/elements.css'
 
 function Elements() {
 

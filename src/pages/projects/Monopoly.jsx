@@ -1,5 +1,4 @@
-
-import '../assets/css/monopoly.css'
+import '../../assets/css/monopoly.css'
 
 function Monopoly() {
 

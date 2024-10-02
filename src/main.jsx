@@ -1,23 +1,25 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import './App.css'
-import ErrorPage from '../error-page';
-import Projects from './pages/Projects';
-import Visualizations from './pages/Visualizations.jsx'
-import DataSets from './pages/DataSets';
-import Contact from './pages/Contact.jsx';
-import Elements from  './pages/Elements';
-import Canvas from './components/Canvas';
-import TypeHype from './pages/TypeHype';
-import Monopoly from './pages/Monopoly';
-import Cube from './pages/Cube'
+
 import Home from './pages/Home'
 import App from './App'
+import ErrorPage from '../error-page';
+
+import Projects from './pages/Projects';
+import Elements from  './pages/projects/Elements';
+import Halfs from './pages/projects/Halfs';
+import TypeHype from './pages/projects/TypeHype';
+import Monopoly from './pages/projects/Monopoly';
+import Cube from './pages/projects/Cube'
+
+import Visualizations from './pages/Visualizations.jsx'
+import Contact from './pages/Contact.jsx';
+import DataSets from './pages/DataSets';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '',
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
@@ -47,7 +49,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/Projects/halfs',
-        element: <Canvas />
+        element: <Halfs />
       },
       {
         path: '/Projects/typehype',
