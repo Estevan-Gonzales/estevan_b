@@ -8,6 +8,10 @@
     margin: 50px;
   }
 
+.master-container {
+  margin: 50px;
+}
+
 .cube-face {
   display: grid;
   border-radius: 5px;
