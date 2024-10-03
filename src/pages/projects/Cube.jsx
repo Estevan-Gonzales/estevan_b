@@ -174,7 +174,7 @@ function Cube() {
 
 
     return (
-        <div className="master-container">
+        <div className="master-container center">
             <button id="btn-front-clock" type="button" className="btn btn-primary">Shift Front</button>
             <button id="btn-right-clock" type="button" className="btn btn-primary">Shift Right</button>
             <button id="btn-bottom-clock" type="button" className="btn btn-primary">Shift Bottom</button>
