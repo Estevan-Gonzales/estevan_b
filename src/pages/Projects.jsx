@@ -1,4 +1,5 @@
 import Project from '../components/Project';
+import '../assets/css/projects.css'
 
 export default function Projects() {
 
@@ -34,7 +35,7 @@ export default function Projects() {
     return (
         
             <div>
-                <div className = "container">
+                <div className = "container projects-container">
                     <div className="row">
                         <div className="col pages-header">Projects</div>
                     </div>
