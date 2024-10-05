@@ -1,12 +1,18 @@
-html,
 body {
-  height: 100%;
   background-color: gray;
+  height: 100%;
+  border: 2px solid black;
+  margin: 30px;
 }
 
+html {
+height: 100%;
+padding-bottom: 60px;
+}
+
+
 .outlet-div {
-  background-color: gray;
-  padding-bottom: 50px;
+  
 }
 
 
