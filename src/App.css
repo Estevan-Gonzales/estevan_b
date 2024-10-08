@@ -1,32 +1,43 @@
 body {
-  background-color: gray;
-  height: 100%;
-  border: 2px solid black;
-  margin: 30px;
+  background-color: tan;
 }
 
 html {
-height: 100%;
-padding-bottom: 60px;
+  background-color: purple;
 }
 
+.outlet-out {
+  padding: 20px;
+  height: 100vh;
+  background-color: gray;
+}
 
 .outlet-div {
-  
+  background-color: gray;
+  border: solid 2px black;
+  min-height: 100%;
 }
 
+.homepage-links {
+  font-size: calc(3em + 1vw);
+  text-align: left;
+}
 
-  .full-width {
-    width: 100%;
-  }
+.projects-grid {
+  display: grid;
+  margin-bottom: 30px;
+}
 
+.full-width {
+  width: 100%;
+}
   
-  .homepage-header {
-    font-size: calc(3em + 3vw);
-    margin-top: 5%;
-    text-wrap: nowrap;
-    text-align: left;
-  }
+.homepage-header {
+  font-size: calc(3em + 1vw);
+  margin-top: 5%;
+  text-wrap: nowrap;
+  text-align: left;
+}
 
   .pages-header {
     font-size: calc(2em + 5vw);
@@ -47,11 +58,7 @@ padding-bottom: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .homepage-links {
-    font-size: calc(3em + 3vw);
-    text-align: left;
-    text-wrap: nowrap;
-  }
+
   .homepage-link a {
     color: black;
   }
@@ -68,9 +75,6 @@ padding-bottom: 60px;
     max-width: 50%;
   }
 
-  .projects-grid {
-    display: grid;
-  }
   
 
   
@@ -199,5 +203,5 @@ padding-bottom: 60px;
   
   .project-details {
     font-size: large;
-    justify-self: first baseline
+    justify-self: first baseline;
   }

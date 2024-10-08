@@ -33,7 +33,6 @@ export default function Projects() {
     ];
             
     return (
-        
             <div>
                 <div className = "container projects-container">
                     <div className="row">

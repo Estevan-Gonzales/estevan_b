@@ -15,7 +15,7 @@ function Project({ projects }) {
                     </Link>
                 </div>
 
-        ))};
+        ))}
 
             </div>
 

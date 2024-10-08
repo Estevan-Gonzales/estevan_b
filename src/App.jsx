@@ -5,10 +5,12 @@ import './App.css'
 
 export default function App() {
   return (
-
+  <div className = 'outlet-out'>
     <div className='outlet-div'>
         <Outlet />
     </div>
+  </div>
+
 
   );
 }
