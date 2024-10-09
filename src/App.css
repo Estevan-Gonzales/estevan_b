@@ -16,12 +16,24 @@ html {
   background-color: gray;
   border: solid 2px black;
   min-height: 100%;
+  position: relative
 }
 
-.homepage-links {
-  font-size: calc(3em + 1vw);
-  text-align: left;
+
+.homepage-links-div {
+  text-align: right;
+  float: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 30px;
+  width: 70%;
+  border: 2px dotted black;
 }
+
+
+
+
 
 .projects-grid {
   display: grid;
@@ -32,18 +44,9 @@ html {
   width: 100%;
 }
 
-.half-space-div {
-  height: 40vh;
 
-}
 
-.homepage-links-div {
-  text-align: right;
-  float: right;
-  margin-right: 30px;
-  width: 70%;
-  border: 2px dotted black;
-}
+
   
 .homepage-header {
   font-size: xxx-large;
