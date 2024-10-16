@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -11,8 +12,10 @@ export default function Home() {
 
     <div className='home'>
         <h1>My name is <strong>Estevan Gonzales</strong>.</h1>
-        <h2>I am a business data analyst and programmer, and I love to create new things.</h2>
+        <h2>I'm a business/data analyst and programmer based in Austin, TX.</h2>
     </div>
+
+
     </div>
 
 
