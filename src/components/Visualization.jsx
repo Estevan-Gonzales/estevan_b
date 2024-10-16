@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import '../assets/css/projects.css'
 function Visualization({ vizs }) {
 
     return (
         <div className="container projects-grid">
-            <div className="row">
+            <div className="row project-single">
                 {vizs.map((viz) => (
 
                 <div className="project col-12 col-md-6 mt-4" key={viz.id}>

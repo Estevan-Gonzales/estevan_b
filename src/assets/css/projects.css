@@ -1,7 +1,28 @@
 html {
-    background-color: gray;
+    background-color: lightgray;
 }
 
 body {
-    border: none
+    border: none;
 }
+
+.projects-main {
+
+}
+
+.projects {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    background-color: lightslategray;
+  }
+
+  
+  .project {
+    position: relative;
+    text-align: center;
+    padding: 2%
+  }
