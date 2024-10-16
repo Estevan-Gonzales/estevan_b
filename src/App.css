@@ -6,12 +6,20 @@ html {
   background-color: white;
 }
 
-.bungee-inline-regular {
+
+.nav-logo {
+  height: 100%;
   font-family: "Bungee Inline", sans-serif;
   font-weight: 400;
   font-style: normal;
-}
+  background-color: grey;
+  border: solid white;
+  font-size: xxx-large;
+  padding-right: 10px;
+  padding-left: 10px;
+  
 
+}
 
 
 .homepage-link a {
@@ -46,6 +54,8 @@ html {
   height: 100%;
   padding-left: 10%;
   padding-right: 10%;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .home-name {
@@ -104,14 +114,23 @@ html {
 
 
 
+.hello-div {
+  font-size: calc(2em + 5vw);
+  text-wrap: nowrap;
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Fugaz One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 
   .pages-header {
-    font-size: calc(2em + 3vw);
+    font-size: calc(2em + 1vw);
     text-wrap: nowrap;
     text-align: center;
     margin-top: 30px;
-    margin-bottom: 20px;
     font-family: "Monoton", sans-serif;
     font-weight: 400;
     font-style: bold;
