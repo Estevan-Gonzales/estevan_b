@@ -18,6 +18,9 @@ html {
     grid-row-end: auto;
     background-color: lightgrey;
     border: solid 3px; 
+    font-size: xx-large;
+    padding: 5px;
+    text-align: center;
   }
   
   .block {
