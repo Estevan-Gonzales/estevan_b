@@ -33,7 +33,7 @@ export default function Projects() {
             name: "Halfs",
             id: "halfs",
             image_url: "/images/halfs.png",
-            description: "Static recreation of a Monopoly board.",
+            description: "Click anywhere on the canvas to paint a colorful rectangle.",
             technologies: ["CSS/HTML", "Grid"]
 
         },

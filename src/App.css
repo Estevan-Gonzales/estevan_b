@@ -253,7 +253,7 @@ html {
     filter: brightness(100%);
   }
   
-  .darken:hover + .project-caption {
+  .darken:hover + .project-name {
     position: absolute;
     top: 50%;
     left: 50%;
