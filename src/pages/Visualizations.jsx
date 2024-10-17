@@ -21,15 +21,13 @@ export default function Visualizations() {
     ];
             
     return (
-            <div>
-                <Navbar />
+        <div>
+            <Navbar />
             <div className = "container projects-container">
-
                 <div className="pages-header">Visualizations</div>
-                <Visualization vizs={vizs}/>
+            <Visualization vizs={vizs}/>
             </div>
-
-            </div>
+        </div>
     );
 
 };

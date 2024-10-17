@@ -1,9 +1,36 @@
 import '../../assets/css/elements.css'
+import { useEffect } from 'react';
+
 
 function Elements() {
 
+    useEffect(() => {
+
+        function changeInfoText(text) {
+            var infoBox = document.getElementById('information-box')
+            infoBox.innerHTML = text
+        }
+
+
+        function displayName(event) {
+            
+            let t = event.target
+            var tp = t.parentElement
+            var name = tp.getElementsByClassName('element-name')[0].innerHTML
+            changeInfoText(name)
+        }
+
+        const collection = document.getElementsByClassName("block");
+        for (let i = 0; i < collection.length; i++) {
+            var el = collection[i]
+            el.addEventListener('click', displayName)
+        }
+
+    }, []);
+    
+
     return (
-        <div className="grid">
+        <div className="grid-elements">
             <div className="block reactive-nonmetals">
                 <div className="element-number">1</div>
                 <div className="element-symbol">H</div>
@@ -12,14 +39,10 @@ function Elements() {
             <div className="block-empty"></div>
             <div className="block-empty"></div>
             <div className="block-empty"></div>
-            <div className="block-empty"></div>
-            <div className="block-empty"></div>
-            <div className="block-empty"></div>
-            <div className="block-empty"></div>
-            <div className="block-empty"></div>
-            <div className="block-empty"></div>
-            <div className="block-empty"></div>
-            <div className="block-empty"></div>
+            <div id="information-box">
+
+            
+            </div>
             <div className="block-empty"></div>
             <div className="block-empty"></div>
             <div className="block-empty"></div>
@@ -41,14 +64,7 @@ function Elements() {
                 <div className="element-symbol">Be</div>
                 <div className="element-name">Beryllium</div>
             </div>
-            <div className="block-empty"></div>
-            <div className="block-empty"></div>
-            <div className="block-empty"></div>
-            <div className="block-empty"></div>
-            <div className="block-empty"></div>
-            <div className="block-empty"></div>
-            <div className="block-empty"></div>
-            <div className="block-empty"></div>
+
             <div className="block-empty"></div>
             <div className="block-empty"></div>
             <div className="block-empty"></div>
