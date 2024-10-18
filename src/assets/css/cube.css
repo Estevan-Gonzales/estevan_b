@@ -6,12 +6,25 @@
     width: 500px;
     height: 500px;
     margin: 50px;
+    justify-self: center;
   }
 
 .master-container {
-  margin: auto;
-  width: 50%;
   padding: 10px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-rows: 1fr 5fr 1fr;
+}
+
+.master-segment {
+  justify-items: center;
+  align-items: center;
+}
+
+.button-div {
+  display: grid;
+  justify-self: center;
+  margin: 10px;
 }
 
 

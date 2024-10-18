@@ -174,13 +174,19 @@ function Cube() {
 
 
     return (
-        <div className="master-container center">
-            <button id="btn-front-clock" type="button" className="btn btn-primary">Shift Front</button>
-            <button id="btn-right-clock" type="button" className="btn btn-primary">Shift Right</button>
-            <button id="btn-bottom-clock" type="button" className="btn btn-primary">Shift Bottom</button>
-            <button id="btn-left-clock" type="button" className="btn btn-primary">Shift Left</button>
-            <button id="btn-top-clock" type="button" className="btn btn-primary">Shift Top</button>
-            <button id="btn-back-clock" type="button" className="btn btn-primary">Shift Back</button>
+        <div className="master-container center master-segment">
+            <div className="master-segment"></div>
+            <div className="master-segment">
+            <div className="button-div"><button id="btn-top-clock" type="button" className="btn" style={{backgroundColor: "blue", color: "white"}}>Shift Top</button></div>
+            <div className="button-div"><button id="btn-front-clock" type="button" className="btn" style={{backgroundColor: "white", border: "solid black"}}>Shift Front</button></div>
+
+            </div>
+            <div className="master-segment"></div>
+            <div className="master-segment">
+                <button id="btn-left-clock" type="button" className="btn" style={{backgroundColor: "orange", color: "white"}}>Shift Left</button>
+            </div>
+
+
 
 
             <div className="grid cube">
@@ -257,6 +263,19 @@ function Cube() {
                     <div id="face-back-9" className="cube-square"></div>
                 </div>
             </div>
+
+            <div className="master-segment">
+                <button id="btn-right-clock" type="button" className="btn" style={{backgroundColor: "red", color: "white"}}>Shift Right</button>
+            </div>
+            <div className="master-segment"></div>
+            <div className="master-segment">
+                <div className="button-div"><button id="btn-bottom-clock" type="button" className="btn" style={{backgroundColor: "green", color: "white"}}>Shift Bottom</button></div>
+                <div className="button-div"><button id="btn-back-clock" type="button" className="btn" style={{backgroundColor: "yellow", color: "black"}}>Shift Back</button></div>
+
+            </div>
+            <div className="master-segment"></div>
+
+
         </div>
     );
 }
