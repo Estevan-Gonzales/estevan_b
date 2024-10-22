@@ -8,6 +8,14 @@ export default function Projects() {
     let projects = [
 
         {
+            name: "Digit Recognizer",
+            id: "https://github.com/Estevan-Gonzales/kaggle_digits/blob/main/kaggle_digits.ipynb",
+            image_url: "/images/digits.png",
+            description: "Python Notebook solution to the open Kaggle competition 'Digit Recognizer'.",
+            technologies: ["Machine Learning", "Keras", "Computer Vision", "Kaggle"]
+        },
+
+        {
             name: "The Elements",
             id: "elements",
             image_url: "/images/elements.png",
@@ -43,6 +51,13 @@ export default function Projects() {
             image_url: "/images/typehype.png",
             description: "Digital representation of a keyboard.",
             technologies: ["CSS/HTML", "Grid",]
+        },
+        {
+            name: "Dashboard",
+            id: "dashboard",
+            image_url: "",
+            description: "Interactive dashboard that shows what was happening on a specified date.",
+            technologies: ["CSS/HTML", "Grid"]
         }
     ];
             

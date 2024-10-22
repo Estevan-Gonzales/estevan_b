@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 import Home from './pages/Home'
 import App from './App'
@@ -12,6 +13,7 @@ import Halfs from './pages/projects/Halfs';
 import TypeHype from './pages/projects/TypeHype';
 import Monopoly from './pages/projects/Monopoly';
 import Cube from './pages/projects/Cube'
+import Dashboard from './pages/projects/Dashboard';
 
 import Visualizations from './pages/Visualizations.jsx'
 import Contact from './pages/Contact.jsx';
@@ -66,7 +68,12 @@ const router = createBrowserRouter([
       {
         path: 'Projects/cube',
         element: <Cube />
-      }
+      },
+      {
+        path: 'Projects/dashboard',
+        element: <Dashboard />
+      },
+
     ]
   }
 ])
