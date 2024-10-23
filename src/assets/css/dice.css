@@ -1,0 +1,27 @@
+#dice-master {
+    display: grid;
+    justify-content: center;
+}
+
+.dice {
+    height: 200px;
+    width: 200px;
+    border: solid black 3px;
+    border-radius: 10px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 10px;
+}
+
+.dice-dot {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    border: solid black;
+    background-color: black;
+    border-radius: 35px;
+    margin: 10px;
+}
+

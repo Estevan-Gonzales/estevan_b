@@ -7,6 +7,14 @@ export default function Projects() {
 
     let projects = [
 
+        
+        {
+            name: "Dice",
+            id: "dice",
+            image_url: "/images/dice.png",
+            description: "For all of your dice needs",
+            technologies: ["CSS/HTML", "Bootstrap", "React"]
+        },
         {
             name: "Digit Recognizer",
             id: "https://github.com/Estevan-Gonzales/kaggle_digits/blob/main/kaggle_digits.ipynb",

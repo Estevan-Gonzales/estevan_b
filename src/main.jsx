@@ -14,6 +14,7 @@ import TypeHype from './pages/projects/TypeHype';
 import Monopoly from './pages/projects/Monopoly';
 import Cube from './pages/projects/Cube'
 import Dashboard from './pages/projects/Dashboard';
+import Dice from './pages/projects/Dice';
 
 import Visualizations from './pages/Visualizations.jsx'
 import Contact from './pages/Contact.jsx';
@@ -73,7 +74,10 @@ const router = createBrowserRouter([
         path: 'Projects/dashboard',
         element: <Dashboard />
       },
-
+      {
+        path: 'Projects/dice',
+        element: <Dice />
+      }
     ]
   }
 ])
