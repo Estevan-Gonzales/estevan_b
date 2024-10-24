@@ -172,11 +172,24 @@ function Dice() {
 
     }
 
+    function clearHistory() {
+        let target = document.getElementById("dice-counts")
+        target.innerHTML = "";
+    }
+
+    function clearDice() {
+        let target = document.getElementById("dice-collection")
+        target.innerHTML = "";
+    }
+
     return (
         <div>
 
         <div id="button-master">
-            <button type="button" className="btn btn-secondary" onClick={returnDice}>Roll Dice</button>
+            <button id="btn-clear-history" type="button" className="btn btn-danger" onClick={clearHistory}>Clear History</button>
+            <button id="btn-clear-dice" type="button" className="btn btn-danger" onClick={clearDice}>Clear Dice</button>
+
+            <button type="button" className="btn btn-primary" onClick={returnDice}>Roll Dice</button>
             <button id="btn-add-d6" type="button" className="btn btn-secondary" onClick={addD6}>Add D6</button>
             <button id="btn-add-d10" type="button" className="btn btn-secondary" onClick={addD10}>Add D10</button>
 
