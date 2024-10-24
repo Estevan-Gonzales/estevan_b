@@ -1,7 +1,6 @@
 #button-master {
     display: flex;
     flex-wrap: wrap;
-
 }
 
 #content-master {
@@ -18,8 +17,9 @@
     align-content: flex-start;
     grid-column: 1 / 2;
     border-right: solid black;
-    padding: 10px;
+    padding-right: 10px;
     grid-template-columns: 1fr;
+    padding: 10px;
 }
 
 #dice-collection {
@@ -60,6 +60,10 @@
 
 
 .dice {
+    display: grid;
+}
+
+.dice-6 {
     height: 200px;
     width: 200px;
     border: solid black 3px;
@@ -70,6 +74,21 @@
     grid-template-rows: 1fr 1fr 1fr;
     padding: 10px;
 }
+
+.dice-10 {
+    height: 200px;
+    width: 200px;
+    border: solid black 3px;
+    border-radius: 100px;
+    margin: 20px;
+    text-align: center;
+
+}
+
+.dice-text {
+    font-size: xxx-large
+}
+
 
 .dice-dot {
     display: grid;
