@@ -134,18 +134,20 @@ function Dice() {
     }    
 
     return (
-        <div id="dice-master">
-            <div id="button-collection">
-                <button type="button" className="btn btn-secondary" onClick={returnDice}>Roll Dice</button>
-                <button type="button" className="btn btn-secondary" onClick={addDice}>Add Dice</button>
-            </div>
+        <div>
+
+        <div id="button-master">
+            <button type="button" className="btn btn-secondary" onClick={returnDice}>Roll Dice</button>
+            <button type="button" className="btn btn-secondary" onClick={addDice}>Add Dice</button>
+        </div>
+
+
+        <div id="content-master">
 
         
-            <div></div>
             <div id="dice-counts">
                 <p className="dice-count"></p>
             </div>
-
 
 
             <div id="dice-collection">
@@ -155,7 +157,7 @@ function Dice() {
 
 
         </div>
-
+        </div>
 
     )
 }
