@@ -1,6 +1,54 @@
 #dice-master {
     display: grid;
     justify-content: center;
+    grid-template-columns: 1fr 3fr;
+
+}
+
+#button-collection {
+    display: flex;
+
+}
+
+#dice-counts {
+    display: grid;
+    justify-content: flex-start;
+    align-content: flex-start;
+    grid-template-columns: 1fr;
+    margin: 20px;
+}
+
+.roll-instance {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    font-weight: bold;
+
+}
+.roll-line {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: small;
+}
+.roll-total {
+    display: grid;
+    justify-content: right;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: medium;
+
+}
+
+.btn {
+    margin: 10px;
+}
+
+
+
+#dice-collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
 }
 
 .dice {

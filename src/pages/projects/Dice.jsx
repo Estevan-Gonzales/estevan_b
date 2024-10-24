@@ -14,6 +14,14 @@ function Dice() {
     }
 
     function returnDice() {
+
+        let rollTotal = 0;
+
+        //roll instance contains text information about a single roll
+        let rollInstance = document.createElement("div")
+        rollInstance.classList.add("roll-instance")
+        rollInstance.textContent = "ROLL"
+    
         let targets = document.getElementsByClassName("dice")
         console.log(targets)
         for (let i=0; i<targets.length; i++) {
@@ -23,6 +31,8 @@ function Dice() {
             target.innerHTML = ""
             console.log(target)
             let randomValue = Math.floor(Math.random() * 6) + 1
+
+            rollTotal += randomValue
     
             switch (randomValue) {
                 case 1:
@@ -93,8 +103,22 @@ function Dice() {
                     break
             }
 
+            let rollLine = document.createElement("div")
+            rollLine.classList.add("roll-line")
+            rollLine.textContent = "Dice " + (i+1).toString() + " (D6): " + randomValue.toString();
+            rollInstance.append(rollLine)
 
         }
+
+        let diceCountTotal = document.createElement("div")
+        diceCountTotal.classList.add("roll-total")
+        diceCountTotal.textContent = rollTotal
+
+        rollInstance.append(diceCountTotal)
+
+        let diceCount = document.getElementById("dice-counts")
+        diceCount.prepend(rollInstance)
+
 
     }
 
@@ -111,14 +135,24 @@ function Dice() {
 
     return (
         <div id="dice-master">
-            <div id="dice-collection">
-                <div className="dice"></div>
-
+            <div id="button-collection">
+                <button type="button" className="btn btn-secondary" onClick={returnDice}>Roll Dice</button>
+                <button type="button" className="btn btn-secondary" onClick={addDice}>Add Dice</button>
             </div>
 
-            <button type="button" className="btn btn-secondary" onClick={returnDice}>Roll Dice</button>
+        
+            <div></div>
+            <div id="dice-counts">
+                <p className="dice-count"></p>
+            </div>
 
-            <button type="button" className="btn btn-secondary" onClick={addDice}>Add Dice</button>
+
+
+            <div id="dice-collection">
+                <div className="dice"></div>
+            </div>
+
+
 
         </div>
 
