@@ -7,6 +7,13 @@ export default function Projects() {
 
     let projects = [
 
+        {
+            name: "Clock",
+            id: "clock",
+            image_url: "images/soon.png",
+            description: "A clock with squares",
+            technologies: ["CSS/HTML", "Grid"]
+        },
         
         {
             name: "Dice",
@@ -59,13 +66,6 @@ export default function Projects() {
             image_url: "/images/typehype.png",
             description: "Digital representation of a keyboard.",
             technologies: ["CSS/HTML", "Grid",]
-        },
-        {
-            name: "Dashboard",
-            id: "dashboard",
-            image_url: "",
-            description: "Interactive dashboard that shows what was happening on a specified date.",
-            technologies: ["CSS/HTML", "Grid"]
         }
     ];
             

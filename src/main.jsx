@@ -15,6 +15,7 @@ import Monopoly from './pages/projects/Monopoly';
 import Cube from './pages/projects/Cube'
 import Dashboard from './pages/projects/Dashboard';
 import Dice from './pages/projects/Dice';
+import Clock from './pages/projects/Clock'
 
 import Visualizations from './pages/Visualizations.jsx'
 import Contact from './pages/Contact.jsx';
@@ -77,6 +78,11 @@ const router = createBrowserRouter([
       {
         path: 'Projects/dice',
         element: <Dice />
+      },
+      {
+
+        path: 'Projects/clock',
+        element: <Clock />       
       }
     ]
   }
