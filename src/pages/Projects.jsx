@@ -8,6 +8,13 @@ export default function Projects() {
     let projects = [
 
         {
+            name: "PiClock",
+            id: "piclock",
+            image_url: "images/soon.png",
+            description: "A clock using the infinite nature of Pi.",
+            technologies: ["CSS/HTML", "Grid"]
+        },
+        {
             name: "Clock",
             id: "clock",
             image_url: "images/soon.png",

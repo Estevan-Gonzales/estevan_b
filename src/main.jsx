@@ -12,10 +12,11 @@ import Elements from  './pages/projects/Elements';
 import Halfs from './pages/projects/Halfs';
 import TypeHype from './pages/projects/TypeHype';
 import Monopoly from './pages/projects/Monopoly';
-import Cube from './pages/projects/Cube'
+import Cube from './pages/projects/Cube';
 import Dashboard from './pages/projects/Dashboard';
 import Dice from './pages/projects/Dice';
-import Clock from './pages/projects/Clock'
+import Clock from './pages/projects/Clock';
+import PiClock from './pages/projects/PiClock';
 
 import Visualizations from './pages/Visualizations.jsx'
 import Contact from './pages/Contact.jsx';
@@ -80,9 +81,12 @@ const router = createBrowserRouter([
         element: <Dice />
       },
       {
-
         path: 'Projects/clock',
         element: <Clock />       
+      },
+      {
+        path: 'Projects/piclock',
+        element: <PiClock />
       }
     ]
   }

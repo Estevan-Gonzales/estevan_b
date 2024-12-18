@@ -1,0 +1,19 @@
+#pi-clock-container {
+    background-color: blue;
+    padding: 10px;
+    display: grid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.number-block {
+    background-color: white;
+    border: solid black 1px;
+    text-align: center;
+    font-size: xx-large;
+}
