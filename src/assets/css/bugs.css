@@ -1,0 +1,74 @@
+html {
+    background-color: lightgray;
+}
+
+body {
+    border: none;
+}
+
+.bugs-main {
+
+}
+
+.bug {
+    width: 100%;
+    border-radius: 30px;
+    border: solid black 5px;
+    aspect-ratio: 11/6;
+    object-fit: cover;
+  }
+
+.bugs {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    background-color: lightslategray;
+  }
+
+  .bug-name {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: xxx-large;
+  }
+
+  
+  .bug {
+    position: relative;
+    text-align: center;
+    padding: 2%
+  }
+
+  .bug-info-box {
+    position: relative;
+    text-align: center;
+    padding: 2%;
+    background-color: blue;
+  }
+
+  .bug-description {
+    margin-top: 3px;
+    font-size: large;
+    border-radius: 10px;
+  }
+
+  .bug-technologies-grid {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .bug-technologies {
+    font-size: medium;
+    background-color: lightgreen;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 3px;
+
+  }

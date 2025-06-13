@@ -18,9 +18,12 @@ import Dice from './pages/projects/Dice';
 import Clock from './pages/projects/Clock';
 import PiClock from './pages/projects/PiClock';
 
+import Spider from './pages/bugs/Spider.jsx'
+
 import Visualizations from './pages/Visualizations.jsx'
 import Contact from './pages/Contact.jsx';
 import DataSets from './pages/DataSets';
+import Bugs from './pages/Bugs.jsx'
 
 const router = createBrowserRouter([
   {
@@ -51,6 +54,10 @@ const router = createBrowserRouter([
       {
         path: '/Contact',
         element: <Contact />
+      },
+      {
+        path: '/Bugs',
+        element: <Bugs />
       },
       {
         path: '/Projects/elements',
@@ -87,6 +94,10 @@ const router = createBrowserRouter([
       {
         path: 'Projects/piclock',
         element: <PiClock />
+      },
+            {
+        path: 'Bugs/spider',
+        element: <Spider />
       }
     ]
   }

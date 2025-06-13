@@ -56,6 +56,16 @@ function Navbar() {
             </a>
           </li>
 
+          <li className="nav-item">
+            <a className="nav-link" href="#">
+            <li>
+                  <a href="#" className="nav-link text-white homepage-link">
+                    <Link to="/Bugs">Bugs</Link>
+                  </a>
+                </li>
+            </a>
+          </li>
+
         </ul>
         <form role="search">
         </form>
