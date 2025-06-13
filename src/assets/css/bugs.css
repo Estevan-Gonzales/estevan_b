@@ -10,12 +10,16 @@ body {
 
 }
 
+
+
 .bug {
     width: 100%;
-    border-radius: 30px;
-    border: solid black 5px;
-    aspect-ratio: 11/6;
+    border-radius: 5px;
+    aspect-ratio: 1/1;
     object-fit: cover;
+    position: relative;
+    text-align: center;
+    padding: 2%
   }
 
 .bugs {
@@ -29,20 +33,10 @@ body {
   }
 
   .bug-name {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: xxx-large;
+    text-align: center;
   }
 
-  
-  .bug {
-    position: relative;
-    text-align: center;
-    padding: 2%
-  }
+
 
   .bug-info-box {
     position: relative;

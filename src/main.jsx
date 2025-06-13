@@ -19,6 +19,7 @@ import Clock from './pages/projects/Clock';
 import PiClock from './pages/projects/PiClock';
 
 import Spider from './pages/bugs/Spider.jsx'
+import Dragonfly from './pages/bugs/Dragonfly.jsx'
 
 import Visualizations from './pages/Visualizations.jsx'
 import Contact from './pages/Contact.jsx';
@@ -95,10 +96,15 @@ const router = createBrowserRouter([
         path: 'Projects/piclock',
         element: <PiClock />
       },
-            {
+      {
         path: 'Bugs/spider',
         element: <Spider />
+      },
+      {
+        path: 'Bugs/dragonfly',
+        element: <Dragonfly />
       }
+
     ]
   }
 ])

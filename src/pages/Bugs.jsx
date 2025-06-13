@@ -11,7 +11,13 @@ export default function Bugs() {
             name: "Spider",
             id: "spider",
             image_url: "images/spider.jpeg",
-            description: "This is a spider!",
+            description: "Spider",
+        },
+        {
+            name: "Dragonfly",
+            id: "dragonfly",
+            image_url: "images/bugs/dragonfly.jpeg",
+            description: "Dragonfly",
         },
 
     ];
